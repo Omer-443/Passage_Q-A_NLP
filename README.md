@@ -24,15 +24,13 @@ A powerful, user-friendly web application built with **Streamlit** that answers 
 contextual-qa-app/
 ├── main.py                     # Streamlit app entry point
 ├── modules/
-│   ├── **init**.py
 │   ├── auth.py                 # Login / Signup management
 │   ├── chunker.py              # Text chunking logic
 │   ├── embedder.py             # Sentence embedding using SBERT
 │   ├── retriever.py            # Retrieve best matching chunk
 │   ├── answerer.py             # Extracts answer from text
 │   ├── memory.py               # Chat memory (Q\&A history)
-├── data/
-│   └── users.json              # JSON-based user database
+|── users.json                  #user database(Created on first use)
 ├── requirements.txt
 └── README.md                   # Project README (you are here)
 
@@ -45,8 +43,8 @@ contextual-qa-app/
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/yourusername/contextual-qa-app.git
-cd contextual-qa-app
+git clone https://github.com/Omer-443/Passage_Q-A_NLP.git
+cd Passage_Q-A_NLP
 ````
 
 ### 2. (Optional) Create and activate a virtual environment
@@ -81,14 +79,6 @@ Start the Streamlit app:
 streamlit run main.py
 ```
 
-> Make sure `users.json` exists under the `data/` folder. If not, create an empty file like:
->
-> ```json
-> []
-> ```
-
----
-
 ## 🧠 How It Works
 
 1. **Login or Sign Up** (User authentication handled in `auth.py`)
@@ -117,7 +107,7 @@ streamlit run main.py
 
 * New users can sign up securely
 * Passwords are hashed with bcrypt
-* User data is stored in `data/users.json`
+* User data is stored in `data/users.db`
 * Includes login/logout functionality
 
 ---
